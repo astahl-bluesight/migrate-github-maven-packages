@@ -82,7 +82,7 @@ jobs:
 
         # retrieve cache
         - name: Restore JSON files from cache
-          uses: actions/cache@v4.0.1
+          uses: actions/cache@v4
           with:
             key: |
               ${{ needs.migrate-packages.outputs.cache-key }}
